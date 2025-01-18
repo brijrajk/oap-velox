@@ -503,7 +503,7 @@ getParquetDecompressionOptions(common::CompressionKind kind) {
   } else if (
       kind == common::CompressionKind_LZ4 ||
       kind == common::CompressionKind_LZO) {
-    options.format.lz4_lzo.isHadoopFrameFormat = true;
+    options.format.lz4_lzo.isHadoopFrameFormat = false;
   }
   return options;
 }
